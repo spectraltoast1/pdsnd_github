@@ -10,9 +10,9 @@ Will Daniel - Bikeshare Git Project
 This project reads and analyzes bikeshare data from 3 cities
 
 ### Files used
-bikeshare_2.py
+bikeshare.py
 chicago.csv
-new_york_city.csv
+newyorkcity.csv
 washington.csv
 
 ### Credits
