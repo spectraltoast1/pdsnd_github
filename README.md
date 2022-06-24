@@ -25,3 +25,6 @@ This is a second edit, because I am supposed to make 3 commits but I made all th
 
 ### **Commit #3**
 This is a third edit, because I am supposed to make 3 commits on this branch but I made all the edits in the first commit.
+
+## **Post-Review Commit**
+This is a review after my first submission of the project to demonstrate correct commit message style.
