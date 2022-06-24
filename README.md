@@ -22,3 +22,6 @@ Python code is all original, but the project follows the instructions for the Py
 
 ### **Commit #2**
 This is a second edit, because I am supposed to make 3 commits but I made all the edits in the first commit.
+
+### **Commit #3**
+This is a third edit, because I am supposed to make 3 commits on this branch but I made all the edits in the first commit.
