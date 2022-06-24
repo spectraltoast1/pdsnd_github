@@ -15,3 +15,5 @@ Include the files used
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
+## **Post-Review Commit**
+This is a review after my first submission of the project to demonstrate correct commit message style.
