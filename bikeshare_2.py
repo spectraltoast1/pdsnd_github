@@ -276,6 +276,7 @@ def main():
     while True:
         selection = raw_or_statistical_data()
         if selection == 'raw data':
+            #the view_data() function includes the necessary data loading that is otherwise done in the load_data() function for statistical analylsis
             view_data()
 
             restart = input('\nWould you like to restart? Enter yes or no.\n')
