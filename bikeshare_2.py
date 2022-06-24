@@ -6,6 +6,11 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+# NOTE: the program uses the Pandas 'mode' function in multiple places and references index 0 on the series it produces
+# The mode function works correctly when there are results with more than one occurance, but produces an empty series if
+# all results occur only once. Additional coding would be necessary to produce a usable response for a dataset containing
+# datapoints that only appear once.
+
 def raw_or_statistical_data():
     """
     Begins by giving the user the option to view individual trip data 5 rows at a time or view statistical data from the whole dataset.
@@ -181,11 +186,11 @@ def time_stats(df):
     print("The most common month is: {month}".format(month=most_common_month))
 
     # TO DO: display the most common day of week
-    most_common_day = df['day_of_week'].mode()#[0]
+    most_common_day = df['day_of_week'].mode()[0]
     print("The most common day of the week is: {day}".format(day=most_common_day))
 
     # TO DO: display the most common start hour
-    most_common_hour = df['Start Time'].dt.hour.mode()#[0]
+    most_common_hour = df['Start Time'].dt.hour.mode()[0]
     print("The most common hour is: {hour}".format(hour=most_common_hour))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -271,6 +276,7 @@ def main():
     while True:
         selection = raw_or_statistical_data()
         if selection == 'raw data':
+            #the view_data() function includes the necessary data loading that is otherwise done in the load_data() function for statistical analylsis
             view_data()
 
             restart = input('\nWould you like to restart? Enter yes or no.\n')
