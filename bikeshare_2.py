@@ -6,6 +6,11 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+# NOTE: the program uses the Pandas 'mode' function in multiple places and references index 0 on the series it produces
+# The mode function works correctly when there are results with more than one occurance, but produces an empty series if
+# all results occur only once. Additional coding would be necessary to produce a usable response for a dataset containing
+# datapoints that only appear once.
+
 def raw_or_statistical_data():
     """
     Begins by giving the user the option to view individual trip data 5 rows at a time or view statistical data from the whole dataset.
